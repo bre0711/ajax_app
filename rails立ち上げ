@@ -1,0 +1,16 @@
+# ホームディレクトリへ移動
+% cd
+
+# projectsディレクトリに移動
+% cd ~/projects
+
+# Railsアプリケーションで用いる仕組みの一部を設定するコマンドを実行（右に長いので注意してください）
+% bundle config --global build.mysql2 --with-opt-dir="$(brew --prefix openssl)"
+
+# Railsのバージョン6.0.0を用いて、FirstAppを作成
+% rails _6.0.0_ new first_app -d mysql
+
+# 「first_app」ディレクトリに移動
+% cd first_app
+
+# 現在のディレクトリのパスを表示
